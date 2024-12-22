@@ -1,9 +1,15 @@
 # Github
 
+## Glossaire
+
 `commit` =  agglomération de modifications
+
 `repository` = répertoire en ligne sur Github qui stocke ton projet
 
+## Les bases
+
 Commencer par aller sur Github et créer un nouveau `repository`. Une fois créé, une page s'affichera avec dans le premier cadre cet enchainement de commandes:
+
 ```bash
 echo "# test" >> README.md
 git init
@@ -40,6 +46,9 @@ git push -u origin main
 ```
 _Permet d'envoyer tes modifications locales (en attente dans tes commits réalisés) vers ton repository_
 
+
+## .gitignore
+
 Une petite chose importante qui peut s'avérer utile: tu peux créer à la racine dans ton dossier un fichier `.gitignore`, dans lequel tu pourras indiquer tous les fichiers que tu ne veux pas que Git gère, comme par exemple des fichiers de log, personnels (notes, etc.), ou parfois encore des fichiers où se trouvent des clés privées/mot de passe si le repository est public. Dans ton cas, ca risque fort probablement d'être le dossier `/node_modules` que tu voudras écarter, car il est réinstallable à la demande et ne nécessite pas d'être sauvegardé.
 
 Pour ajouter des exclusions, il suffit de les écrire pleinement ligne par ligne dans le fichier `.gitignore`.
@@ -48,7 +57,7 @@ Afin que cela soit prit en compte, vérifie bien que ce fichier est ajouté aux 
 
 Quoi que tu fasses (ou presque), normalement, il n'y a pas de quoi paniquer avec Git. Tu peux dans la grande majorité des cas revenir en arrière sauf si tu fais des dingueries!
 
----
+## Travail collaboratif
 
 Pour le futur, si tu es amené à travailler avec d'autres personnes, voici 2 commandes intéressantes:
 
